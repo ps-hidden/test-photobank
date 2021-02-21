@@ -1,3 +1,5 @@
+import albumStore from '@/config/localStorage';
+
 export default {
     props: {
         array: {
@@ -28,6 +30,8 @@ export default {
             } else {
                 this.favorites.push(id);
             }
+
+            albumStore.setFavorites(this.favorites);
         },
-    }
+    },
 };

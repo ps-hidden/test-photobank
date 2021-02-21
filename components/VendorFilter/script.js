@@ -1,4 +1,5 @@
 import GroupItems from '@/components/GroupItems';
+import albumStore from '@/config/localStorage';
 import { TYPE_ALBUM, TYPE_FAVORITE } from '~/config/const';
 
 export default {
@@ -9,8 +10,8 @@ export default {
     data: () => ({
         types: { TYPE_ALBUM, TYPE_FAVORITE },
         photos: [],
-        favorites: [],
-        type: TYPE_ALBUM,
+        favorites: albumStore.getFavorites(),
+        type: albumStore.getType(),
     }),
 
     computed: {
@@ -46,6 +47,7 @@ export default {
 
         changeType (type) {
             this.type = type;
+            albumStore.setType(type);
             this.get(type === TYPE_FAVORITE);
         },
 
