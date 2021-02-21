@@ -1,0 +1,278 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    text-align: inherit;
+}
+
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: #f4f4f4;
+    color: #000000;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    min-height: 100vh;
+    min-width: 320px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+html.offline,
+body.offline {
+    filter: grayscale(1);
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+p {
+    margin: 0;
+}
+
+p:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+p:not(:first-child) {
+    margin-top: 1em;
+}
+
+img {
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    user-select: none;
+}
+
+svg {
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    user-select: none;
+}
+
+h1,
+.h1 {
+    font-size: 2rem;
+}
+
+h2,
+.h2 {
+    font-size: 1.5rem;
+}
+
+h3,
+.h3 {
+    font-size: 1.17rem;
+}
+
+.row {
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.bgi {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block-x {
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.block-x.x16-9 {
+    padding-bottom: 56.25%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.relative {
+    position: relative;
+}
+
+.us-none {
+    user-select: none;
+}
+
+.nowrap {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.no-scrollbar {
+    scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+.scrollbar {
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.scrollbar::-webkit-scrollbar {
+    background: transparent;
+    height: 8px;
+    width: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: #000000;
+}
+
+.ta-left {
+    text-align: left;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.ta-right {
+    text-align: right;
+}
+
+.ta-justify {
+    text-align: justify;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.jc-between {
+    justify-content: space-between;
+}
+
+.jc-around {
+    justify-content: space-around;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-start {
+    justify-content: flex-start;
+}
+
+.jc-end {
+    justify-content: flex-end;
+}
+
+.ai-start {
+    align-items: flex-start;
+}
+
+.ai-end {
+    align-items: flex-end;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.pin-f,
+.pin-a {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.pin-f {
+    position: fixed;
+}
+
+.tn-400 {
+    transition: 0.4s;
+}
+
+.click {
+    cursor: pointer;
+    transition: 0.2s transform;
+}
+
+.click:active {
+    transform: scale(0.8);
+}
+
+.auto {
+    margin: auto;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+@for $i from 0 through 8 {
+    .mb-#{$i*5} {
+        margin-bottom: #{$i*5}px;
+    }
+    .mt-#{$i*5} {
+        margin-top: #{$i*5}px;
+    }
+}

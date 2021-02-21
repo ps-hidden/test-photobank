@@ -1,0 +1,15 @@
+.wrap {
+    display: flex;
+    height: 100vh;
+    position: relative;
+
+    &__bg {
+        background: rgba(27, 32, 79, 0.2);
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
